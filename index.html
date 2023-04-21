@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container {
+      display: grid;
+      margin: auto;
+      background-color: #f0f1EC;
+      width: 748px;
+      height: 748px;
+      grid-template-rows: 414px 314px 20px;
+      grid-template-columns: 320px auto 50px;
+      grid-auto-columns: 130px;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+    .red {
+      background-color: #E72F24;
+      border-right: #000 solid 9px;
+      border-bottom: #000 solid 9px;
+    }
+    .first-gray {
+      background-color: #f0f1EC;
+      border-bottom: #000 solid 9px;
+     
+    }
+
+    .second-gray {
+      background-color: #f0f1EC;
+      border-bottom: #000 solid 9px;
+    }
+
+    .third-gray {
+      background-color: #f0f1EC;
+      border-right: #000 solid 9px;
+      border-bottom: #000 solid 9px;
+    }
+
+    .fourth-gray {
+      background-color: #F0F1EC; 
+      border-right: 9px solid #000;
+      border-bottom: 9px solid #000;
+    }
+    .fifth-gray {
+      border-right: 9px solid #000;;
+    }
+    
+    .blue {
+      background-color:#004592 ;
+      width: 50px; 
+      height: 130px;
+      border-bottom: #000 solid 20px;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      border-right: #000 solid 10px;
+      width: 198px;
+    }
+    
+    .black {
+      background-color: #232629;
+      width: 160px;
+      border-right: #000 solid 10px;
+    }
+
+   
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="first-gray"></div>
+    <div class="second-gray"></div>
+    <div class="third-gray"></div>
+    <div class="fourth-gray"></div>
+    <div class="blue"></div>
+    <div class="fifth-gray"></div>
+
+    <div class="flex-container">
+      <div class="yellow"></div>
+      <div class="black"></div>
+  </div>
+   
+   
+  </div>
+</body>
+
+</html>
